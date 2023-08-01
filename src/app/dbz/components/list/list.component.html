@@ -1,5 +1,10 @@
 <h4>Listado</h4>
 <ul class="list-group">
-  <li class="list-group-item">Goku - 10.000</li>
-  <li class="list-group-item">Krillin - 500</li>
+  <li *ngFor="let character of characerList"
+  class="list-group-item">
+  <span>{{character.name }}</span>
+  <Strong> - Power: </Strong>
+  <Span>{{character.power}}</Span>
+
+</li>
 </ul>
